@@ -92,7 +92,7 @@
 }
 
 - (BOOL)isPublic{
-  return self.privacy == @"public";
+  return [self.privacy isEqualToString:@"public"];
 }
 
 
