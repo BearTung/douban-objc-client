@@ -91,6 +91,10 @@
 	return 0;
 }
 
+- (BOOL)isPublic{
+  return self.privacy == @"public";
+}
+
 
 - (NSInteger)recsCount {
   DoubanAttribute *attr = [self attributeForName:@"recs_count"];
